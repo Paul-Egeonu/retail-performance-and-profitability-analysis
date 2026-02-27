@@ -1,4 +1,4 @@
-# 📊 Retail Beverage Performance & Profitability Analysis (2022–2024)
+# 📊 Retail Beverage Performance & Profitability Analysis
 
 ![Excel](https://img.shields.io/badge/Tool-Excel-green)
 ![Power Query](https://img.shields.io/badge/Tool-Power%20Query-blue)
