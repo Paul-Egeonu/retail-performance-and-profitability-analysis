@@ -141,10 +141,10 @@ Analysis was structured across:
 | Metric | Revenue | Operating Profit |
 |--------|----------|-----------------|
 | Mean | $1,245.51 | $489.48 |
-| Median | — | — |
-| Std Deviation | — | — |
+| Median | $780.35 | $326.30 |
+| Std Deviation | $1,271.64 | $486.65 |
 | Skewness | 1.96 | 2.33 |
-| Kurtosis | High | High |
+| Kurtosis | 4.13 | 7.18 |
 
 ### Observations
 - Positive skewness indicates revenue concentration in large transactions.
