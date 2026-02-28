@@ -237,6 +237,12 @@ Business predominantly operates in high-margin zone.
 
 ## 📈 2024 Forecast Model
 
+Forecast built using:
+
+- `FORECAST.ETS`
+- Historical monthly smoothing
+- Margin expansion trend modeling
+
 ### Projected 2024 Performance
 
 | Metric | Projection |
@@ -255,7 +261,12 @@ Business predominantly operates in high-margin zone.
 
 - 2022: 40.0%  
 - 2023: 42.6%  
-- 2024 (Projected): 44.2%  
+- 2024 (Projected): 44.2%
+
+### Trend
+- Margin expansion trend sustained.
+- Revenue growth consistent with historical trajectory.
+- Scalable profit structure maintained.
 
 The model reflects continued margin expansion alongside revenue growth.
 
@@ -279,6 +290,29 @@ The model reflects continued margin expansion alongside revenue growth.
 
 ---
 
+# 📈 Key Business Insights
+
+1. Revenue grew 296% while profit grew 324%.
+2. Margin improved from 40.0% → 42.6%.
+3. 86% of transactions operate in high-margin range.
+4. Revenue concentration exists in top cities.
+5. Pricing elasticity visible above $0.70.
+6. Business demonstrates scalable operational efficiency.
+
+---
+
+# 🧠 Strategic Recommendations
+
+1. Expand operations in high-margin mid-volume states.
+2. Optimize pricing within $0.40–$0.55 corridor.
+3. Monitor revenue concentration risk from large transactions.
+4. Standardize retailer margin performance.
+5. Maintain cost discipline to preserve margin expansion.
+6. Develop city-level growth strategy for top-performing markets.
+
+---
+
+
 ## 🛠 Tools & Technologies
 
 - Microsoft Excel  
@@ -286,7 +320,8 @@ The model reflects continued margin expansion alongside revenue growth.
 - Pivot Tables  
 - Advanced Excel Formulas  
 - FORECAST.ETS  
-- Scenario Modeling  
+- Scenario Modeling
+- Descriptive Statistics 
 - Business Intelligence Visualization  
 
 ---
@@ -320,10 +355,11 @@ This project demonstrates the ability to:
 
 ```
 📂 Retail-Beverage-Analysis
-│── 📊 Data
-│── 📈 Dashboards
-│── 📑 Forecast Model
-│── 📄 README.md
+│── 📊 data/
+│── 📈 dashboards/
+│── 📑 forecast-model/
+│── 📷 images/
+│── README.md
 ```
 
 ---
@@ -336,277 +372,3 @@ Data Analyst | Business Intelligence | Financial Analytics
 ---
 
 > ⭐ If you found this project insightful, feel free to star the repository.
-
-
-
-
-# 📊 Retail Beverage Performance & Profitability Analysis (2022–2024)
-
-![Excel](https://img.shields.io/badge/Tool-Excel-green)
-![Power Query](https://img.shields.io/badge/Tool-Power%20Query-blue)
-![Forecasting](https://img.shields.io/badge/Analysis-Time%20Series-orange)
-![Business Intelligence](https://img.shields.io/badge/Domain-Financial%20Analytics-purple)
-
----
-
-## 📌 Project Overview
-
-This project analyzes **9,648 retail beverage transactions (2022–2023)** to evaluate:
-
-- Revenue growth performance  
-- Profitability drivers  
-- Regional and brand contribution  
-- Pricing effectiveness  
-- Margin stability  
-- Revenue concentration risk  
-- 2024 financial projections  
-
-The objective was to simulate a **real-world financial analytics engagement** and transform raw transactional data into executive-level business intelligence.
-
----
-
-# 🗂 Dataset Overview
-
-| Metric | Value |
-|--------|-------|
-| Total Transactions | 9,648 |
-| Period | Jan 2022 – Dec 2023 |
-| Forecast | 2024 |
-| Total Units Sold | 24,788,610 |
-| Brands | Multiple |
-| Regions | Multiple |
-
----
-
-# 🧹 Data Cleaning & Transformation (Power Query)
-
-All preprocessing was completed using **Power Query**.
-
-### Steps Performed
-
-- Removed duplicate transactions
-- Corrected data types
-- Standardized date formats
-- Created calculated columns:
-  - Revenue
-  - Profit per Unit
-  - Operating Margin (where missing)
-  - Profit Category segmentation
-- Reordered structured table for modeling
-
----
-
-## 🔧 Key Power Query (M) Formulas Used
-
-### Revenue Calculation
-```m
-= [Price per Unit] * [Units Sold]
-```
-
-### Profit per Unit
-```m
-= [Operating Profit] / [Units Sold]
-```
-
-### Profit Category Classification
-```m
-= if [Operating Margin] <= 0.15 then "Low"
-  else if [Operating Margin] <= 0.30 then "Medium"
-  else "High"
-```
-
----
-
-# 📊 Exploratory Data Analysis (EDA)
-
-## 1️⃣ Summary Statistics
-
-| Metric | Revenue | Operating Profit |
-|--------|----------|-----------------|
-| Mean | $1,245.51 | $489.48 |
-| Median | — | — |
-| Std Deviation | — | — |
-| Skewness | 1.96 | 2.33 |
-| Kurtosis | High | High |
-
-### Observations
-- Positive skewness indicates revenue concentration in large transactions.
-- High kurtosis suggests presence of extreme values.
-- Distribution not perfectly normal.
-
----
-
-## 2️⃣ Historical Performance (2022–2023)
-
-| KPI | Value |
-|------|-------|
-| Total Revenue | $12.02M |
-| Total Operating Profit | $4.72M |
-| Average Margin | 42.3% |
-| Revenue Growth (2022→2023) | +296% |
-| Profit Growth | +324% |
-
-### Insights
-- Profit grew faster than revenue, indicating margin expansion.
-- Revenue scale-up did not compress margins.
-- Operational leverage improved significantly.
-
----
-
-# 🌍 Regional Performance Insights
-
-- West region generated highest revenue.
-- South region achieved highest margin.
-- Revenue leadership ≠ Margin leadership.
-- Top 10 cities contribute disproportionately to total profit.
-
-### Strategic Insight
-Geographic optimization opportunities exist in high-margin mid-volume states.
-
----
-
-# 🥤 Brand & Retailer Insights
-
-- Coca-Cola leads in revenue contribution.
-- All major brands maintain >40% average margins.
-- Retailer-level margin inconsistency detected.
-- Portfolio diversification reduces single-brand dependency risk.
-
----
-
-# 💰 Pricing & Demand Analysis
-
-- Highest volume concentration between **$0.40–$0.55**.
-- Significant drop-off above $0.70.
-- Clear evidence of pricing elasticity.
-
-### Business Interpretation
-Optimal pricing corridor identified for volume maximization.
-
----
-
-# 📈 Profit Segmentation Analysis
-
-| Category | Definition | Share of Transactions |
-|-----------|------------|----------------------|
-| Low | ≤15% | Small minority |
-| Medium | 15–30% | Moderate |
-| High | >30% | 86% |
-
-### Insight
-Business predominantly operates in high-margin zone.
-
----
-
-# ⚠ Risk & Stability Diagnostics
-
-- Revenue skewness: 1.96
-- Profit skewness: 2.33
-- High kurtosis values
-- Zero-revenue anomalies identified
-- Concentration risk from large-volume deals
-
----
-
-# 🔮 2024 Forecast Model
-
-Forecast built using:
-
-- `FORECAST.ETS`
-- Historical monthly smoothing
-- Margin expansion trend modeling
-
-## 2024 Projections
-
-| Metric | Projection |
-|--------|------------|
-| Revenue | $14.43M |
-| Operating Profit | $5.81M |
-| Operating Margin | 44.2% |
-
-### Trend
-- Margin expansion trend sustained.
-- Revenue growth consistent with historical trajectory.
-- Scalable profit structure maintained.
-
----
-
-# 📊 Dashboards
-
-## 🔹 Retail Performance Dashboard
-
-📌 KPIs, monthly trends, regional comparison, brand analysis
-
-![Dashboard Screenshot](images/dashboard1.png)
-
----
-
-## 🔹 2024 Projection Dashboard
-
-📌 Forecast visualization, quarterly trends, margin expansion
-
-![Forecast Dashboard](images/dashboard2.png)
-
----
-
-## 🎥 Interactive Demo (Optional)
-
-![Dashboard GIF](images/demo.gif)
-
----
-
-# 🛠 Tools Used
-
-- Microsoft Excel
-- Power Query
-- Pivot Tables
-- FORECAST.ETS
-- Scenario Modeling
-- Descriptive Statistics
-- Business Intelligence Visualization
-
----
-
-# 📈 Key Business Insights
-
-1. Revenue grew 296% while profit grew 324%.
-2. Margin improved from 40.0% → 42.6%.
-3. 86% of transactions operate in high-margin range.
-4. Revenue concentration exists in top cities.
-5. Pricing elasticity visible above $0.70.
-6. Business demonstrates scalable operational efficiency.
-
----
-
-# 🧠 Strategic Recommendations
-
-1. Expand operations in high-margin mid-volume states.
-2. Optimize pricing within $0.40–$0.55 corridor.
-3. Monitor revenue concentration risk from large transactions.
-4. Standardize retailer margin performance.
-5. Maintain cost discipline to preserve margin expansion.
-6. Develop city-level growth strategy for top-performing markets.
-
----
-
-# 📂 Repository Structure
-
-```
-📂 Retail-Beverage-Analysis
-│── 📊 data/
-│── 📈 dashboards/
-│── 📑 forecast-model/
-│── 📷 images/
-│── README.md
-```
-
----
-
-# 🚀 Author
-
-**Paul Egeonu**  
-Data Analyst | Financial Analytics | Business Intelligence  
-
----
-
-> ⭐ If this project was insightful, consider starring the repository.
