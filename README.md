@@ -20,7 +20,7 @@ The goal was to transform raw transactional data into:
 - A structured 2024 revenue forecast model  
 - Interactive performance dashboards  
 
-This project simulates a real-world business intelligence engagement for a multi-region retail beverage company.
+The objective was to simulate a **real-world financial analytics engagement** and transform raw transactional data into executive-level business intelligence.
 
 ---
 
@@ -84,6 +84,27 @@ This project simulates a real-world business intelligence engagement for a multi
 
 ---
 
+## 🔧 Key Power Query (M) Formulas Used
+
+### Revenue Calculation
+```m
+= [Price per Unit] * [Units Sold]
+```
+
+### Profit per Unit
+```m
+= [Operating Profit] / [Units Sold]
+```
+
+### Profit Category Classification
+```m
+= if [Operating Margin] <= 0.15 then "Low"
+  else if [Operating Margin] <= 0.30 then "Medium"
+  else "High"
+```
+
+---
+
 ## 📊 Exploratory Data Analysis (EDA) Framework
 
 Analysis was structured across:
@@ -115,6 +136,38 @@ Analysis was structured across:
 
 ---
 
+## 1️⃣ Summary Statistics
+
+| Metric | Revenue | Operating Profit |
+|--------|----------|-----------------|
+| Mean | $1,245.51 | $489.48 |
+| Median | — | — |
+| Std Deviation | — | — |
+| Skewness | 1.96 | 2.33 |
+| Kurtosis | High | High |
+
+### Observations
+- Positive skewness indicates revenue concentration in large transactions.
+- High kurtosis suggests presence of extreme values.
+- Distribution not perfectly normal.
+
+---
+
+## 2️⃣ Historical Performance (2022–2023)
+
+| KPI | Value |
+|------|-------|
+| Total Revenue | $12.02M |
+| Total Operating Profit | $4.72M |
+| Average Margin | 42.3% |
+| Revenue Growth (2022→2023) | +296% |
+| Profit Growth | +324% |
+
+### Insights
+- Profit grew faster than revenue, indicating margin expansion.
+- Revenue scale-up did not compress margins.
+- Operational leverage improved significantly.
+
 ## 📊 Performance Summary (2022–2023)
 
 - Revenue increased from **$2.42M (2022)** to **$9.59M (2023)**  
@@ -129,19 +182,22 @@ The business demonstrates strong pricing discipline and scalable profitability.
 
 ## 🌍 Regional & Geographic Performance
 
-- Revenue contribution varies significantly by region  
-- Margin leadership differs from revenue leadership  
+- Revenue contribution varies significantly by region; West region generated highest revenue.  
+- Margin leadership differs from revenue leadership; South region achieved highest margin.  
 - Top cities contribute disproportionately to total profit  
 - Performance variability exists across states  
+
+### Strategic Insight
+Geographic optimization opportunities exist in high-margin mid-volume states.
 
 ---
 
 ## 🥤 Brand & Retailer Performance
 
-- Leading brands drive the majority of revenue  
-- Margin consistency across major brands  
-- Retailer-level margin variability observed  
-- Balanced product portfolio structure  
+- Coca-Cola leads in revenue contribution.
+-  Margin consistency across major brands; all major brands maintain >40% average margins.
+- Retailer-level margin variability observed.
+- Portfolio diversification reduces single-brand dependency risk.
 
 ---
 
@@ -152,13 +208,29 @@ The business demonstrates strong pricing discipline and scalable profitability.
 - Clear optimal pricing band observed  
 - Evidence of pricing sensitivity at higher price points  
 
+### Business Interpretation
+Optimal pricing corridor identified for volume maximization.
+
+---
+
+# 📈 Profit Segmentation Analysis
+
+| Category | Definition | Share of Transactions |
+|-----------|------------|----------------------|
+| Low | ≤15% | Small minority |
+| Medium | 15–30% | Moderate |
+| High | >30% | 86% |
+
+### Insight
+Business predominantly operates in high-margin zone.
+
 ---
 
 ## ⚠ Risk & Stability Indicators
 
-- Positive skewness in revenue and profit distributions  
+- Positive skewness in revenue and profit distributions; Revenue skewness: 1.96, Profit skewness: 2.33  
 - High kurtosis indicates presence of extreme transactions  
-- Moderate revenue concentration risk  
+- Moderate revenue concentration risk (from large-volume deals) 
 - Zero-revenue records identified for review  
 
 ---
