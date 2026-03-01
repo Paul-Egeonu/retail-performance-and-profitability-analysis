@@ -289,6 +289,11 @@ The model reflects continued margin expansion alongside revenue growth.
 - Growth comparison vs historical performance  
 
 ---
+<img width="1319" height="539" alt="Screenshot (165)" src="https://github.com/user-attachments/assets/e387ea2d-c4a4-41df-8cd8-599bbf49dc42" />
+
+<img width="1316" height="537" alt="Screenshot (166)" src="https://github.com/user-attachments/assets/0b93a8ef-3cc3-443b-a60d-636fd63d43e9" />
+
+---
 
 # 📈 Key Business Insights
 
