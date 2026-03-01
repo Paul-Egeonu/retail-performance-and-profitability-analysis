@@ -361,11 +361,16 @@ This project demonstrates the ability to:
 ```
 📂 Retail-Beverage-Analysis
 │── 📊 data/
-│── 📈 dashboards/
-│── 📑 forecast-model/
+│   ├── Retail_Performance_raw_data.xlsx   # Raw dataset
+│   └── Retail_Performance_Analysis.xlsx   
+|
 │── 📷 images/
+│   ├── Dashboard_1.png   # Performance Dashboard
+│   └── Dashboard_1.png   # Forecast Dashboard 
+│ 
 │── README.md
 ```
+
 
 ---
 
