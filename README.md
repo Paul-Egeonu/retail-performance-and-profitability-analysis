@@ -366,7 +366,7 @@ This project demonstrates the ability to:
 |
 │── 📷 images/
 │   ├── Dashboard_1.png   # Performance Dashboard
-│   └── Dashboard_1.png   # Forecast Dashboard 
+│   └── Dashboard_2.png   # Forecast Dashboard 
 │ 
 │── README.md
 ```
